@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Frequency Synthesizer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="synth-card">
+    <h2>Wave Synthesizer</h2>
+    <canvas id="visualizer" width="360" height="120"></canvas>
+    
+    <div class="control-row">
+      <label>Frequency (<span id="freqLabel">440</span> Hz)</label>
+      <input type="range" id="freq" min="100" max="1200" value="440" />
+    </div>
+
+    <div class="control-row">
+      <label>Waveform</label>
+      <select id="type">
+        <option value="sine">Sine</option>
+        <option value="square">Square</option>
+        <option value="sawtooth">Sawtooth</option>
+        <option value="triangle">Triangle</option>
+      </select>
+    </div>
+
+    <button id="toggleBtn" class="btn">Start Audio</button>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
